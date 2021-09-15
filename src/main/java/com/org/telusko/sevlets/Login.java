@@ -21,7 +21,7 @@ public class Login extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name=request.getParameter("uname");
-		System.out.println(name);
+		System.out.println("name",+name);
 		String password=request.getParameter("password");
 		System.out.println(password);
 		LoginDao logindao=new LoginDao();
